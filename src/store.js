@@ -1,15 +1,13 @@
-// @flow
-import { createStore, applyMiddleware } from 'redux';
-// import createSagaMiddleware from 'redux-saga';
-import indexReducer from './reducers/index';
 
-// const sagaMiddleware = createSagaMiddleware();
+import { createStore } from 'redux';
+import  toggleFavorite  from './reducers/favoriteReducer'
+
+
+
 
 const store = createStore(
-  indexReducer,
-  applyMiddleware(),
-);
+  toggleFavorite,
 
-// sagaMiddleware.run(/* Your root saga */);
+);
 
 export default store;
