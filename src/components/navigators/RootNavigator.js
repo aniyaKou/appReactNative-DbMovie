@@ -1,7 +1,7 @@
 // @flow
 import { createStackNavigator } from 'react-navigation';
-import { Screen1, Screen2 } from './../screens/Screens.sample';
 import Search from '../Search';
+import FilmDetail from '../FilmDetail';
 
 const RootNavigator = createStackNavigator({
   Home: {
@@ -10,7 +10,9 @@ const RootNavigator = createStackNavigator({
       title: 'Recherche',
     }),
   },
-  /* Add more screen here */
+  FilmDetail: { 
+  screen: FilmDetail
+}
 });
 
 export default RootNavigator;
