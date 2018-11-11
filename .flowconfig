@@ -1,0 +1,14 @@
+[ignore]
+.*/node_modules/react-native*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.system.node.resolve_dirname=node_modules
+module.name_mapper='^react-native$' -> '<PROJECT_ROOT>/react-native-dummy.js'
+
+[strict]
